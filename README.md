@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged:when creating a new toy, the error message 'NameError (uninitialized constant ToysController::Toys): app/controllers/toys_controller.rb:10:in `create'I changed the classname to Toy as it should be since the name of my controller Toy is in singular. I was then able to add a new toy to the database.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged:On adding the like to a toy i got the error "Unhandled Rejection (SyntaxError): Unexpected end of JSON input". The data wasnt being displayed as json so rendered the data as json by adding the render json: to the update method.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged:On clicking donate to goodwill button an error popped up indcating there was no route that matches the delete method. I solved this by adding a destroy method in the toy controller.
